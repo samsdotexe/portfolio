@@ -1,0 +1,63 @@
+body {
+  font-family: "Avenir";
+  margin: 6% 3%;
+}
+.main {
+  display: grid;
+  grid-template-columns: 70%;
+}
+.sidebar {
+  height: 100%;
+  z-index: 1;
+  position: fixed;
+  top: 0;
+  right: 0;
+  margin: 6% 3%;
+  margin-left: 71.5%;
+  background-color: white;
+  max-width: 26%;
+}
+.name {
+  text-align: right;
+  margin: 0px;
+}
+.title {
+  margin: 0px;
+}
+.text {
+  text-align: justify;
+  margin: 0px;
+  width: 100%;
+}
+.email {
+  text-align: right;
+  margin: 0px;
+}
+.link {
+  transition: 0.2s ease;
+  margin: 0px;
+  color: #808080;
+  text-decoration: none;
+}
+.link:hover {
+  transition: 0.2s ease;
+  color: black;
+  text-decoration: underline;
+}
+.right {
+  float: right;
+}
+.images {
+  display: grid;
+  grid-template-columns: 32% 2% 32% 2% 32%;
+}
+.image {
+  transition: 0.2s ease;
+  width: 100%;
+  margin-bottom: 10px;
+}
+.image:hover {
+  transition: 0.2s ease;
+  filter: brightness(50%);
+  backface-visibility: hidden;
+}

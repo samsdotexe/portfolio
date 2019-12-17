@@ -1,15 +1,46 @@
 require 'sinatra'
 require 'pry'
-require './assets/image_assets'
+require './assets/info'
 
-include ImageAssets
+include Info
 
 get '/' do
-  @images = ImageAssets.hash["images"]
+  @info = Info.hash["info"]
+  @images = Info.hash["images"]
+  @albums = Info.hash["albums"]
   erb :index
 end
 
+get '/images' do
+  redirect '/'
+end
+
+get '/music' do
+  redirect '/'
+end
+
+get '/images/:name' do
+  @image = Info.hash["images"][params[:name]]
+  erb :images
+end
+
 get '/music/:album' do
-  @album = ImageAssets.hash["albums"]
+  @album = Info.hash["albums"][params[:album]]
   erb :albums
+end
+
+get '/css/index' do
+  send_file './assets/stylesheets/index.css'
+end
+
+get '/css/images' do
+  send_file './assets/stylesheets/images.css'
+end
+
+get '/css/albums' do
+  send_file './assets/stylesheets/albums.css'
+end
+
+get '*' do
+  redirect '/'
 end
