@@ -1,0 +1,42 @@
+body {
+  font-family: "Avenir";
+  margin: 6% 15%;
+}
+.main {
+  display: grid;
+  grid-template-columns: 48% 4% 48%;
+}
+.home-link {
+  float:left;
+  transition: 0.2s ease;
+  margin: 0px;
+  color: #808080;
+  text-decoration: none;
+
+}
+.home-link:hover {
+  transition: 0.2s ease;
+  color: black;
+  text-decoration: underline;
+}
+.link {
+  transition: 0.2s ease;
+  margin: 0px;
+  color: #808080;
+  text-decoration: none;
+
+}
+.link:hover {
+  transition: 0.2s ease;
+  color: black;
+  text-decoration: underline;
+}
+.image {
+  width: 100%;
+}
+.title {
+  margin-top: 0px;
+}
+.text {
+  text-align: justify;
+}

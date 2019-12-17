@@ -1,127 +1,56 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>portfolio</title>
-  <style>
-    body {
-      font-family: "Avenir";
-      margin: 6% 3%;
-    }
-    .column {
-      display: grid;
-      grid-template-columns: 70%;
-    }
-    .sidebar {
-      height: 100%;
-      z-index: 1;
-      position: fixed;
-      top: 0;
-      right: 0;
-      margin: 6% 3%;
-      margin-left: 71.5%;
-      background-color: white;
-    }
-    .name {
-      text-align: right;
-      margin: 0px;
-    }
-    .title {
-      margin: 0px;
-    }
-    .text {
-      text-align: justify;
-      margin: 0px;
-    }
-    .email {
-      text-align: right;
-      margin: 0px;
-    }
-    .link {
-      transition: 0.2s ease;
-      margin: 0px;
-      color: #808080;
-      float: right;
-      text-decoration: none;
-    }
-    .link:hover {
-      transition: 0.2s ease;
-      color: black;
-      text-decoration: underline;
-    }
-    .images {
-      display: grid;
-      grid-template-columns: 32% 2% 32% 2% 32%;
-    }
-    .image {
-      transition: 0.2s ease;
-      width: 100%;
-      margin-bottom: 10px;
-    }
-    .image:hover {
-      transition: 0.2s ease;
-      filter: brightness(60%);
-      backface-visibility: hidden;
-    }
-  </style>
-</head>
+  <head>
+    <title><%= @info["title"] %></title>
+    <link rel="stylesheet" type="text/css" href="/css/index">
+  </head>
 
-<body>
-  <div class="column">
-    <div>
+  <body>
+    <div class="main">
       <div class="images">
         <div>
-          <img src="https://i.postimg.cc/nLJ24gkp/one.png" class="image">
-          <img src="https://i.postimg.cc/Jh5qPx6J/4.png" class="image">
-          <img src="https://i.postimg.cc/4xtwhspW/7.png" class="image">
+          <a href="/images/one"><img src="<%= @images["one"]["link"] %>" class="image"></a>
         </div>
         <br/>
         <div>
-          <img src="https://i.postimg.cc/Gh4Xdktw/2.png" class="image">
-          <img src="https://i.postimg.cc/CL9m1znZ/5.png" class="image">
-          <img src="https://i.postimg.cc/XqpkNbVc/8.png" class="image">
+          <a href="/images/two"><img src="<%= @images["two"]["link"] %>" class="image"></a>
         </div>
         <br/>
         <div>
-          <img src="https://i.postimg.cc/zBDkMh6Q/3.png" class="image">
-          <img src="https://i.postimg.cc/MTsY8T8p/6.png" class="image">
+          <a href="/images/three"><img src="<%= @images["three"]["link"] %>" class="image"></a>
         </div>
       </div>
       <br/>
-      <h1 class="title">SECTION ONE</h1>
+      <h1 class="title">MUSIC</h1>
+      <br/>
+      <div class="images">
+        <a href="/music/<%= @albums.keys[0] %>">
+          <img src="<%= @albums[@albums.keys[0]]["cover"] %>" class="image">
+        </a>
+        <div></div>
+        <a href="/music/<%= @albums.keys[1] %>">
+          <img src="<%= @albums[@albums.keys[1]]["cover"] %>" class="image">
+        </a>
+      </div>
     </div>
 
     <div class="sidebar">
       <div></div>
       <div>
-        <h1 class="name">SAM SULLIVAN</h1>
-        <p class="email">samsullivansemail@gmail.com</p>
-        <a class="link" href="http://www.linkedin.com/in/samhsullivan">
-          linkedin/samhsullivan
+        <h1 class="name"><%= @info["name"] %></h1>
+        <p class="email"><%= @info["email"] %></p>
+        <a class="link right" href="<%= @info["link-one"]["link"] %>">
+          <%= @info["link-one"]["name"] %>
         </a>
         <p style="display:inline; float: right; margin: 0px;">&nbsp;</p>
-        <a class="link" href="http://www.github.com/samsdotexe">
-          github/samsdotexe
+        <a class="link right" href="<%= @info["link-two"]["link"] %>">
+          <%= @info["link-two"]["name"] %>
         </a>
         <br/><br/>
         <p class="text">
-          We live in a data-driven world: people search through data to find
-          insights to inform strategy, marketing, operations, and a plethora
-          of other categories. There are a ton of businesses that use large,
-          relational databases, which makes a basic understanding of SQL a
-          great employable skill not only for data scientists, but for
-          almost everyone.
+          <%= @info["text"] %>
         </p>
-        <br/>
-        <p class="text">
-          In this course, you’ll learn how to communicate with relational
-          databases through SQL. You’ll learn—and practice with 4 projects—how
-          to manipulate data and build queries that communicate with
-          more than one table.
-        </p>
-        <br/>
-        <br/>
       </div>
     </div>
-  </div>
-</body>
+  </body>
 </html>

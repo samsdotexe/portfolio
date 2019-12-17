@@ -1,0 +1,27 @@
+body {
+  font-family: "Avenir";
+  margin: 6% 15%;
+}
+.image {
+  width: 100%;
+}
+.home-link {
+  float: left;
+  transition: 0.2s ease;
+  margin: 0px;
+  color: #808080;
+  text-decoration: none;
+
+}
+.home-link:hover {
+  transition: 0.2s ease;
+  color: black;
+  text-decoration: underline;
+}
+.grid {
+  display: grid;
+  grid-template-columns: 56% 4% 40%;
+}
+.title {
+  margin: 0px;
+}

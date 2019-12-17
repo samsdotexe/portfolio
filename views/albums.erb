@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= @album["title"] %></title>
+    <link rel="stylesheet" type="text/css" href="/css/albums">
+  </head>
+
+  <body>
+    <div>
+      <a href="/" class="home-link"><h1 style="margin: 0px;"><%= "<- HOME" %></h1></a>
+      <br/><br/><br/>
+    </div>
+
+    <div class="main">
+      <div>
+          <iframe width="100%" height="500" scrolling="no" frameborder="no" allow="autoplay" src="<%= @album["soundcloud"] %>"></iframe>
+      </div>
+      <div></div>
+      <div>
+        <h1 class="title"><%= @album["title"].upcase%></h1>
+        <p>
+          <%= @album["description"] %>
+        </p>
+        <p><%= @album["date"] %></p>
+        <a href="<%= @album["bandcamp"]%>" class="link">
+          View on bandcamp
+        </a>
+      </div>
+    </div>
+  </body>
+</html>
