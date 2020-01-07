@@ -2,6 +2,10 @@ require 'sinatra'
 require 'pry'
 require './assets/info'
 
+set :port, 8080
+set :static, true
+set :bind, '0.0.0.0'
+
 include Info
 
 get '/' do
