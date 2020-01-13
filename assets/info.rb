@@ -43,6 +43,16 @@ module Info
           "link" => "https://i.postimg.cc/PfSby4qJ/cheer-down.png",
           "name" => "Cheer Down",
           "desc" => "",
+        },
+        "five" => {
+          "link" => "https://i.postimg.cc/3RqmtDLb/bugs.png",
+          "name" => "Bugs",
+          "desc" => "",
+        },
+        "six" => {
+          "link" => "https://i.postimg.cc/P5BqVQhD/gorl.jpg",
+          "name" => "Girl",
+          "desc" => "",
         }
       },
 
