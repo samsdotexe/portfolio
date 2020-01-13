@@ -5,17 +5,13 @@
     <link rel="stylesheet" type="text/css" href="/css/images">
   </head>
   <body>
-    <a href="/" class="home-link"><h1 style="margin: 0px;"><%= "<- HOME" %></h1></a>
-    <br/><br/><br/>
-    <div class="grid">
       <div>
         <img src="<%= @image["link"] %>" class="image">
-      </div>
-      <div></div>
-      <div>
+        <div width=100%;>
+        <a href="/" class="home-link"><h1 style="margin: 0px;"><%= "<- HOME" %></h1></a>
         <h1 class="title"><%= @image["name"].upcase %></h1>
+        </div>
         <p><%= @image["desc"] %></p>
       </div>
-    </div>
   </body>
 </html>
