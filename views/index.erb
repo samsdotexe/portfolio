@@ -4,20 +4,24 @@
     <title><%= @info["title"] %></title>
     <link rel="stylesheet" type="text/css" href="/css/index">
   </head>
-
   <body>
     <div class="main">
+      <h1 class="title">ART</h1>
+      <br/>
       <div class="images">
         <div>
-          <a href="/images/one"><img src="<%= @images["one"]["link"] %>" class="image"></a>
+          <%= @list[0] %>
+          <%= @list[5] %>
         </div>
         <br/>
         <div>
-          <a href="/images/two"><img src="<%= @images["two"]["link"] %>" class="image"></a>
+          <%= @list[3] %>
+          <%= @list[1] %>
         </div>
         <br/>
         <div>
-          <a href="/images/three"><img src="<%= @images["three"]["link"] %>" class="image"></a>
+          <%= @list[2] %>
+          <%= @list[4] %>
         </div>
       </div>
       <br/>
