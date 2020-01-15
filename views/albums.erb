@@ -13,18 +13,15 @@
 
     <div class="main">
       <div>
-          <iframe width="100%" height="500" scrolling="no" frameborder="no" allow="autoplay" src="<%= @album["soundcloud"] %>"></iframe>
+        <img src="<%= @album["cover"] %>" width=100%;>
       </div>
-      <div></div>
+      <br/>
       <div>
+        <iframe style="border: 0; width: 100%; height: 50%;" src="https://bandcamp.com/EmbeddedPlayer/album=<%= @album["bandcamp"] %>/size=large/bgcol=ffffff/linkcol=333333/artwork=none/transparent=true/" seamless></iframe>
+        <br/><br/>
         <h1 class="title"><%= @album["title"].upcase%></h1>
-        <p>
-          <%= @album["description"] %>
-        </p>
+        <p><%= @album["description"] %></p>
         <p><%= @album["date"] %></p>
-        <a href="<%= @album["bandcamp"]%>" class="link">
-          View on bandcamp
-        </a>
       </div>
     </div>
   </body>

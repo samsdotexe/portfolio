@@ -1,6 +1,6 @@
 body {
   font-family: "Avenir";
-  margin: 6% 15%;
+  margin: 6% 20%;
 }
 .main {
   display: grid;
@@ -19,24 +19,9 @@ body {
   color: black;
   text-decoration: underline;
 }
-.link {
-  transition: 0.2s ease;
-  margin: 0px;
-  color: #808080;
-  text-decoration: none;
-
-}
-.link:hover {
-  transition: 0.2s ease;
-  color: black;
-  text-decoration: underline;
-}
-.image {
-  width: 100%;
-}
-.title {
-  margin-top: 0px;
-}
 .text {
   text-align: justify;
+}
+.cover {
+  width: 100%;
 }

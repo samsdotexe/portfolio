@@ -1,6 +1,10 @@
 body {
   font-family: "Avenir";
+<<<<<<< Updated upstream
   margin: 6% 15%;
+=======
+  margin: 6% 20%;
+>>>>>>> Stashed changes
 }
 .image {
   width: 100%;
