@@ -15,16 +15,17 @@ get '/' do
   @list = []
 
   Info.hash["assets"]["images"].each do |key, value|
-    @list << "<a href=\"/images/#{key}\"><img src=\"#{value["link"]}\" class=\"image\"></a>"
+    # @list << "<a href=\"/images/#{key}\"><img src=\"#{value["link"]}\" class=\"image\"></a>"
+    @list << "<img src=\"#{value["link"]}\" class=\"image\">"
   end
 
   erb :index
 end
 
-get '/images/:name' do
-  @image = Info.hash["assets"]["images"][params[:name]]
-  erb :images
-end
+# get '/images/:name' do
+#   @image = Info.hash["assets"]["images"][params[:name]]
+#   erb :images
+# end
 
 get '/music/:album' do
   @album = Info.hash["assets"]["albums"][params[:album]]
