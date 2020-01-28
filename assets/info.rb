@@ -32,7 +32,7 @@ module Info
         "two" => {
           "link" => "https://i.postimg.cc/BnvsVsQN/the-boys.png",
           "name" => "The Boys",
-          "desc" => "",
+          "desc" => "the boys ",
         },
         "three" => {
           "link" => "https://i.postimg.cc/FKmb4P8P/bedroom.png",
@@ -61,14 +61,14 @@ module Info
           "description" => "",
           "date" => "12/12/19",
           "cover" => "https://i.postimg.cc/dQ8mwgk9/i-crashed-my-spaceship.png",
-          "bandcamp" => "1987238980"
+          "soundcloud" => "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/915352924&color=%23050505&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"
         },
         "sometime" => {
           "title" => "Sometime Soon",
           "description" => "My first \"official\" album.",
           "date" => "1/12/18",
           "cover" => "https://i.postimg.cc/mghfz154/cover.png",
-          "bandcamp" => "3914218437",
+          "soundcloud" => "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/422139992&color=%23050505&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"
         }
       }
     }

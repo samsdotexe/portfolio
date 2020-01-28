@@ -10,22 +10,22 @@ include Info
 get '/' do
   @info = Info.hash["info"]
   @albums = Info.hash["assets"]["albums"]
-  @images = Info.hash["assets"]["images"]
 
-  @list = []
+  @images = []
 
   Info.hash["assets"]["images"].each do |key, value|
-    # @list << "<a href=\"/images/#{key}\"><img src=\"#{value["link"]}\" class=\"image\"></a>"
-    @list << "<img src=\"#{value["link"]}\" class=\"image\">"
+    @images << "<a href=\"/images/#{key}\"><img src=\"#{value["link"]}\" class=\"image\"></a>"
   end
+
+  @rand = [0,1,2,3,4,5].shuffle
 
   erb :index
 end
 
-# get '/images/:name' do
-#   @image = Info.hash["assets"]["images"][params[:name]]
-#   erb :images
-# end
+get '/images/:name' do
+  @image = Info.hash["assets"]["images"][params[:name]]
+  erb :images
+end
 
 get '/music/:album' do
   @album = Info.hash["assets"]["albums"][params[:album]]
