@@ -14,7 +14,8 @@ get '/' do
   @images = []
 
   Info.hash["assets"]["images"].each do |key, value|
-    @images << "<a href=\"/images/#{key}\"><img src=\"#{value["link"]}\" class=\"image\"></a>"
+    @images << "<a href=\"/images/#{key}\"><img src=\"" +
+               "#{value["link"]}\" class=\"image\"></a>"
   end
 
   @rand = [0,1,2,3,4,5].shuffle
@@ -24,11 +25,13 @@ end
 
 get '/images/:name' do
   @image = Info.hash["assets"]["images"][params[:name]]
+
   erb :images
 end
 
 get '/music/:album' do
   @album = Info.hash["assets"]["albums"][params[:album]]
+  
   erb :albums
 end
 
