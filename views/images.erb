@@ -1,24 +1,24 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title><%= @image["name"] %></title>
-    <link rel="stylesheet" type="text/css" href="/css/images">
+    <title><%= "adjfhb" %></title>
+    <link rel="stylesheet" type="text/css" href="/css/albums">
   </head>
   <body>
+    <div>
+      <a href="/" class="home-link"><h1 style="margin: 0px;"><%= "<- HOME" %></h1></a>
+      <br/><br/><br/>
+    </div>
+
+    <div class="main">
       <div>
-        <img src="<%= @image["link"] %>" class="image">
+        <img src="<%= @image["link"] %>" width=100%;>
       </div>
-
-      <div></div>
-
+      <br/>
       <div>
-        <h1 class="title"><%= @image["name"].upcase %></h1>
+        <h1 style="margin: 0px;"><%= @image["name"].upcase %></h1>
         <p><%= @image["desc"] %></p>
-        <!-- <div width=100%;>
-        <a href="/" class="home-link"><h1 style="margin: 0px;"></h1></a>
-        <h1 class="title"></h1>
-        </div>
-        <p></p> -->
       </div>
+    </div>
   </body>
 </html>

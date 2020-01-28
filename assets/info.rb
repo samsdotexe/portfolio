@@ -16,43 +16,42 @@ module Info
       "musician that loves working on creative projects. I have been "       +
       "designing, building, and creating using various tools and mediums "   +
       "for as long as I can remember.<br/><br/>This website "                +
-      "<a href='https://github.com/samsdotexe/portfolio' class='link'>"     +
-      "(code on Github)</a> contains a sample of my recent work. I welcome "  +
+      "<a href='https://github.com/samsdotexe/portfolio' class='link'>"      +
+      "(code on Github)</a> contains a sample of my recent work. I welcome " +
       "any opportunities to collaborate with fellow artists or developers "  +
       "who share my interests in solving problems and constructing new ideas."
     },
-
     "assets" => {
       "images" => {
         "one" => {
           "link" => "https://i.postimg.cc/2yWDdPPC/turkey-skeleton.png",
           "name" => "Turkey Skeleton",
-          "desc" => "A turkey skeleton drawn in inks.",
+          "desc" => "A turkey skeleton drawn in inks."
         },
         "two" => {
           "link" => "https://i.postimg.cc/BnvsVsQN/the-boys.png",
           "name" => "The Boys",
-          "desc" => "",
+          "desc" => "(put description here)"
         },
         "three" => {
           "link" => "https://i.postimg.cc/FKmb4P8P/bedroom.png",
           "name" => "Bedroom",
-          "desc" => "",
+          "desc" => "(put description here)"
         },
         "four" => {
           "link" => "https://i.postimg.cc/PfSby4qJ/cheer-down.png",
           "name" => "Cheer Down",
-          "desc" => "",
+          "desc" => "(put description here)"
         },
         "five" => {
           "link" => "https://i.postimg.cc/3RqmtDLb/bugs.png",
           "name" => "Bugs",
-          "desc" => "",
+          "desc" => "(put description here)"
         },
         "six" => {
           "link" => "https://i.postimg.cc/P5BqVQhD/gorl.jpg",
           "name" => "Girl",
-          "desc" => "",
+          "desc" => "(put description here)"
         }
       },
       "albums" => {
@@ -61,14 +60,14 @@ module Info
           "description" => "",
           "date" => "12/12/19",
           "cover" => "https://i.postimg.cc/dQ8mwgk9/i-crashed-my-spaceship.png",
-          "bandcamp" => "1987238980"
+          "soundcloud" => "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/915352924&color=%23050505&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"
         },
         "sometime" => {
           "title" => "Sometime Soon",
           "description" => "My first \"official\" album.",
           "date" => "1/12/18",
           "cover" => "https://i.postimg.cc/mghfz154/cover.png",
-          "bandcamp" => "3914218437",
+          "soundcloud" => "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/422139992&color=%23050505&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"
         }
       }
     }
