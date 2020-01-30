@@ -13,9 +13,9 @@ module Info
         "name" => "linkedin/samhsullivan"
       },
       "text" => "I am a programmer, animator, illustrator, writer, and "     +
-      "musician who loves working on creative projects. I have been "       +
+      "musician who loves working on creative projects. I have been "        +
       "designing, building, and creating using various tools and mediums "   +
-      "for as long as I can remember.<br/><br/>This website "                +
+      "for as long as I can remember.<br/><br/>This website, programmed and designed by me," +
       "<a href='https://github.com/samsdotexe/portfolio' class='link'>"      +
       "(code on Github)</a> contains a sample of my recent work. I welcome " +
       "any opportunities to collaborate with fellow artists or developers "  +
