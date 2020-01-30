@@ -26,7 +26,7 @@ module Info
         "one" => {
           "link" => "https://i.postimg.cc/2yWDdPPC/turkey-skeleton.png",
           "name" => "Turkey Skeleton",
-          "desc" => "A turkey skeleton drawn in inks."
+          "desc" => "Drawn on paper with a fineliner pen and a water color brush with a well of ink. Scanned in and touched up with Photoshop."
         },
         "two" => {
           "link" => "https://i.postimg.cc/BnvsVsQN/the-boys.png",
