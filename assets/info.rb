@@ -15,9 +15,9 @@ module Info
       "text" => "I am a programmer, animator, illustrator, writer, and "     +
       "musician who loves working on creative projects. I have been "        +
       "designing, building, and creating using various tools and mediums "   +
-      "for as long as I can remember.<br/><br/>This website, programmed and designed by me, " +
+      "for as long as I can remember.<br/><br/>This website, programmed and designed by me " +
       "<a href='https://github.com/samsdotexe/portfolio' class='link'>"      +
-      "(code on Github)</a> contains a sample of my recent work. I welcome " +
+      "(code on Github)</a>, contains a sample of my recent work. I welcome " +
       "any opportunities to collaborate with fellow artists or developers "  +
       "who share my interests in solving problems and constructing new ideas."
     },
@@ -36,7 +36,7 @@ module Info
         "three" => {
           "link" => "https://i.postimg.cc/FKmb4P8P/bedroom.png",
           "name" => "Bedroom",
-          "desc" => "Created a rough 3D bedroom model in Blender for reference; traced and colored in Clip Studio Paint."
+          "desc" => "A rough 3D bedroom model created in Blender for reference; traced and colored in Clip Studio Paint."
         },
         "four" => {
           "link" => "https://i.postimg.cc/PfSby4qJ/cheer-down.png",
